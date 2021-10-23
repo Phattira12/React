@@ -4,7 +4,7 @@ const validateStudent = Yup.object().shape({
   titleId: Yup.string().required("กรุณาระบุ คำนำหน้าชื่อ"),
   name: Yup.string().required("กรุณาระบุ ชื่อ"),
   lastname: Yup.string().required("กรุณาระบุ นามสกุล"),
-  Year: Yup.string().required("กรุณาระบุ ปีเกิด"),
+  year: Yup.string().required("กรุณาระบุ ปีเกิด"),
   month: Yup.string().required("กรุณาระบุ เดือนเกิด"),
   day: Yup.string().required("กรุณาระบุ วันเกิด"),
   phone: Yup.string()
