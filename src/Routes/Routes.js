@@ -15,10 +15,12 @@ import ShowStudent from "../Views/Setting/Student/ShowStudent";
 import ShowFaculty from "../Views/Setting/Faculty/ShowFaculty";
 import ShowTeacher from "../Views/Setting/Teacher/ShowTeacher";
 import ShowSubject from "../Views/Setting/Subject/ShowSubject";
+import ShowCourses from "../Views/Setting/Courses/ShowCourses";
 import FFaculty from '../Views/Setting/Faculty/FFaculty';
 import FMajor from "../Views/Setting/Major/FMajor";
 import Profile from "../Views/Profile/Profile";
 import FTeacher from "../Views/Setting/Teacher/FTeacher";
+import FCourses from "../Views/Setting/Courses/FCourses";
 
 function Routers(props) {
   return (
@@ -35,10 +37,12 @@ function Routers(props) {
               <Route path="/showStudent" component={ShowStudent} />
               <Route path="/showSubject" component={ShowSubject} />
               <Route path="/showTeacher" component={ShowTeacher} />
+              <Route path="/showCourses" component={ShowCourses} />
               <Route path="/fFaculty" component={FFaculty} />
               <Route path="/fMajor" component={FMajor} />
               <Route path="/fTeacher" component={FTeacher} />
               <Route path="/profile" component={Profile} />
+              <Route path="/fCourses" component={FCourses} />
             </Switch>
           </PrivateLayout>
         </Route>

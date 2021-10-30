@@ -142,6 +142,11 @@ export default class Sidebar extends React.Component {
                   <span> ตารางสอน</span>
                 </NavLink>
 
+                <NavLink to="/showCourses" className="nav-link">
+                  <i className="far fa-square"></i>
+                  <span> จองรายวิชาเรียน </span>
+                </NavLink>
+
                 <NavLink to="/sendGrade" className="nav-link">
                   <i className="far fa-square"></i>
                   <span> ส่งผลการเรียน</span>

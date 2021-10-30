@@ -285,7 +285,7 @@ export default class FTeacher extends Component {
                           บันทึกข้อมูล
                         </button>{" "}
                         &nbsp;&nbsp;
-                        <button className="btn btn-secondary">
+                        <button type="reset" className="btn btn-secondary">
                           ล้างข้อมูล
                         </button>
                       </div>

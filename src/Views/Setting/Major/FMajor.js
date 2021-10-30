@@ -22,7 +22,6 @@ export default class FMajor extends Component {
   }
   async componentDidMount() {
     this.fetchAllFaculty();
-    // this.FfetchAllMajor();
   }
   async fetchAllFaculty() {
     let rsFaculty = await getAllFaculty();
@@ -152,7 +151,6 @@ export default class FMajor extends Component {
                           />
                         </div>
                       </div>
-
                       <div className="form-group row">
                         <div className="col-md-6">
                           <input

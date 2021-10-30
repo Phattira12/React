@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
-import { GetAllSubject } from "../../../services/subject.service";
+import { GetSubject } from "../../../services/subject.service";
 import Pagination from "@material-ui/lab/Pagination";
 
 export default function ShowSubject() {
@@ -15,7 +15,7 @@ export default function ShowSubject() {
   useEffect(fetchData,[pageNo,pageSize]);
   
   async function fetchData() {
-    const res = await GetAllSubject(pageSize,pageNo);
+    const res = await GetSubject(pageSize,pageNo);
     if (res.statusCode == "002") {
       let pagination = res.pagin;
       if (pagination.totalRow > 0) {

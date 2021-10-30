@@ -36,7 +36,7 @@ export async function UpdateFaculty(facultyCode, data) {
 export async function deleteFaculty(facultyCode) {
   try {
     const response = await Instance.delete(
-      URLLOCAL + "Faculty/DeleteFaculty?FacultyCode=" + parseInt(facultyCode)
+      URLLOCAL + "Faculty/DeleteFaculty?FacultyCode=" + facultyCode
     );
     return await response.data;
   } catch (error) {

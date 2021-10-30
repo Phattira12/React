@@ -1,5 +1,5 @@
 import React from "react";
-import { Formik } from "formik";
+import { Formik, ErrorMessage } from "formik";
 import DropdownList from "../../component/DropdownList";
 import { monthTH } from "../../Data/month-th.json";
 import { EditStudent, SaveStudent } from "../../services/student.service";
@@ -198,6 +198,7 @@ export default class Profile extends React.Component {
                           errors={errors}
                           touched={touched}
                         />
+                        
                       </div>
                       <div className="col-md-4">
                         <label>ชื่อ</label>
@@ -248,6 +249,11 @@ export default class Profile extends React.Component {
                             </option>
                           ))}
                         </select>
+                        <ErrorMessage
+                            name="day"
+                            component="div"
+                            style={{ color: "red" }}
+                        />
                       </div>
                       <div className="col-md-2">
                         <select
@@ -268,6 +274,11 @@ export default class Profile extends React.Component {
                             </option>
                           ))}
                         </select>
+                        <ErrorMessage
+                            name="month"
+                            component="div"
+                            style={{ color: "red" }}
+                        />
                       </div>
                       <div className="col-md-2">
                         <select
@@ -288,6 +299,11 @@ export default class Profile extends React.Component {
                             </option>
                           ))}
                         </select>
+                        <ErrorMessage
+                            name="year"
+                            component="div"
+                            style={{ color: "red" }}
+                        />
                       </div>
                       <div className="col-md-3">
                         <label>เบอร์โทรศัพท์</label>

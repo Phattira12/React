@@ -18,6 +18,7 @@ class FFaculty extends Component {
     let res = "";
     if (strFacltycode === 0) {
       res = await SaveFaculty(data);
+      console.log("data" + JSON.stringify(data));
     } else {
       res = await UpdateFaculty(strFacltycode, data);
     }
@@ -105,6 +106,7 @@ class FFaculty extends Component {
                           <input
                             type="hidden"
                             name="facultyCode"
+                            className="form-control"
                             onChange={handleChange}
                             onBlur={handleBlur}
                             value={values.facultyCode}
@@ -175,7 +177,7 @@ class FFaculty extends Component {
                           บันทึกข้อมูล
                         </button>{" "}
                         &nbsp;&nbsp;
-                        <button className="btn btn-secondary">
+                        <button type="reset" className="btn btn-secondary">
                           ล้างข้อมูล
                         </button>
                       </div>
